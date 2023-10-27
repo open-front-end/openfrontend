@@ -2,3 +2,48 @@ site_name: HPC Toolkit Front End Documentation
 
 theme:
   name: material
+  custom_dir: docs/overrides
+  palette:
+    primary: blue
+  font:
+    text: Nunito
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.path
+    - search.suggest
+    - search.highlight
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/lan
+
+plugins:
+  - search
+
+# repo_url: https://github.com/GoogleCloudPlatform/hpc-toolkit
+# repo_name: hpc-toolkit
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - User Guide: getting_started/user_guide.md
+    - Admin Guide: getting_started/admin_guide.md
+    - Developer Guide: getting_started/developer_guide.md
+  - Other Documentation:
+    - Advanced Admin Guide: other_docs/advanced_admin_guide.md
+    - Application Guide: other_docs/application_guide.md
+    - Cluster Guide: other_docs/cluster_guide.md
+    - Workbench User Guide: other_docs/workbench_user_guide.md
+    - Workbench Admin Guide: other_docs/workbench_admin_guide.md
+
+extra_javascript:
+  - javascripts/extra.js
+
+extra_css:
+  - stylesheets/extra.css
