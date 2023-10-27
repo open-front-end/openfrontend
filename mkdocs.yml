@@ -1,0 +1,4 @@
+site_name: HPC Toolkit Front End Documentation
+
+theme:
+  name: material
