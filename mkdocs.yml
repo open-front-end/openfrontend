@@ -31,16 +31,17 @@ plugins:
 
 nav:
   - Home: index.md
-  - Getting Started:
-    - User Guide: getting_started/user_guide.md
-    - Admin Guide: getting_started/admin_guide.md
-    - Developer Guide: getting_started/developer_guide.md
-  - Other Documentation:
-    - Advanced Admin Guide: other_docs/advanced_admin_guide.md
-    - Application Guide: other_docs/application_guide.md
-    - Cluster Guide: other_docs/cluster_guide.md
-    - Workbench User Guide: other_docs/workbench_user_guide.md
-    - Workbench Admin Guide: other_docs/workbench_admin_guide.md
+  - Users:
+    - User Guide: users/user_guide.md
+    - Workbench User Guide: users/workbench_user_guide.md
+  - Admins:
+    - Admin Guide: admins/admin_guide.md
+    - Advanced Admin Guide: admins/advanced_admin_guide.md
+    - Cluster Guide: admins/cluster_guide.md
+    - Application Guide: admins/application_guide.md
+    - Workbench Admin Guide: admins/workbench_admin_guide.md
+  - Developers:
+    - Developer Guide: developers/developer_guide.md
 
 extra_javascript:
   - javascripts/extra.js
