@@ -1,0 +1,156 @@
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+<style>
+
+    .md-main {
+        flex-grow: 0
+    }
+
+    .md-main__inner {
+        display: flex;
+        height: 100%;
+    }
+
+    .tx-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        padding-top: .0rem;
+        background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(160deg,47%,55%,1) 99%,#fff 99%);
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .tx-hero {
+        margin: 128px 2.8rem;
+        color: var(--md-primary-bg-color);
+        justify-content: center;
+    }
+
+    .tx-hero h1 {
+        margin-bottom: 1rem;
+        color: currentColor;
+        font-weight: 700
+    }
+
+    .tx-hero__content {
+        padding-bottom: 1rem;
+        margin: 0 auto;
+    }
+
+    .tx-hero .md-button {
+        margin-top: .5rem;
+        margin-right: .5rem;
+        color: var(--md-primary-bg-color);
+        padding: 0.75rem; /* Adjust the padding for the desired button height and width */
+        border-radius: 10px;
+        text-align: left;
+        white-space: normal;
+        max-width: 290px;
+        height: 200px;
+        box-sizing: border-box;
+    }
+
+    .tx-hero .md-button--users {
+        background-color: var(--md-primary-bg-color);
+        color: hsla(280deg, 37%, 48%, 1);
+        border-color: var(--md-primary-bg-color)
+    }
+
+    .tx-hero .md-button--admins {
+        background-color: var(--md-primary-bg-color);
+        color: hsla(280deg, 37%, 48%, 1);
+        border-color: var(--md-primary-bg-color)
+    }
+
+    .tx-hero .md-button--developers {
+        background-color: var(--md-primary-bg-color);
+        color: hsla(280deg, 37%, 48%, 1);
+        border-color: var(--md-primary-bg-color)
+    }
+
+    .tx-hero .md-button:focus,
+    .tx-hero .md-button:hover {
+        background-color: var(--md-accent-fg-color);
+        color: var(--md-default-bg-color);
+        border-color: var(--md-accent-fg-color)
+    }
+
+    .tx-hero .md-button-title {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        font-size: 1.0rem; /* Adjust the font size for titles */
+        display: block;
+    }
+
+    .tx-hero .md-button-description {
+        font-size: 0.6rem;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-around; /* Adjust as needed */
+        align-items: flex-start; /* Align the tops of buttons */
+    }
+
+    @media screen and (max-width:30em) {
+        .tx-hero h1 {
+            font-size: 1.4rem
+        }
+    }
+
+    @media screen and (min-width:60em) {
+        .tx-hero__content {
+            max-width: 40rem;
+            margin-top: 3.5rem;
+            margin-bottom: 3.5rem;
+            margin-left: 1.0rem;
+            margin-right: 4.0rem;
+            align-items: center;
+        }
+    }
+
+    .md-main {
+        display: none;
+    }
+
+</style>
+
+<main class="tx-container">
+    <div class="md-grid md-typeset">
+      <div class="tx-hero">
+        <div class="tx-hero__content">
+            <h1>Google Cloud HPC Toolkit</h1>
+            <p>Cloud HPC Toolkit is an open-source software offered by Google Cloud which makes it easy
+                for customers to deploy HPC environments on Google Cloud.</p>
+            <p>The Toolkit Front End is an easy-to-use interface for creating HPC clusters, installing
+                applications, and submitting jobs.</p>
+            <div class="buttons">
+                <a href="users/user_guide" class="md-button md-button--users">
+                    <span class="md-button-title">Run the Front End</span>
+                    <span class="md-button-description">Get started with using the Front End.</span>
+                </a>
+                <a href="admins/admin_guide" class="md-button md-button--admins">
+                    <span class="md-button-title">Install the Front End</span>
+                    <span class="md-button-description">Explore options for deploying the Front End.</span>
+                </a>
+                <a href="developers/developer_guide" class="md-button md-button--developers">
+                    <span class="md-button-title">Front End Architecture</span>
+                    <span class="md-button-description">Learn how the Front End works.</span>
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+</main>
+
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}

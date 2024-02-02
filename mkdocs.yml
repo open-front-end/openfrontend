@@ -1,8 +1,8 @@
-site_name: HPC Toolkit Front End Documentation
+site_name: Google Cloud HPC Toolkit
 
 theme:
   name: material
-  custom_dir: docs/overrides
+  custom_dir: theme/custom
   palette:
     primary: blue
   font:
