@@ -27,7 +27,7 @@
 
 
     .tx-hero {
-        margin: 128px 2.8rem;
+        margin: 5rem 2.8rem;
         color: var(--md-primary-bg-color);
         justify-content: center;
     }
@@ -38,66 +38,104 @@
         font-weight: 700
     }
 
+    .tx-hero p {
+        margin-bottom: 1rem;
+        color: currentColor;
+        font-size:larger;
+    }
+
     .tx-hero__content {
-        padding-bottom: 1rem;
-        margin: 0 auto;
+        margin: 0 0 0 0;
     }
 
     .tx-hero .md-button {
-        margin-top: .5rem;
+        flex: 1;
+        margin-top: 0.5rem;
         margin-right: .5rem;
-        color: var(--md-primary-bg-color);
-        padding: 0.75rem; /* Adjust the padding for the desired button height and width */
+        color: var(--md-primary-fg-color);
+        padding-top: 3rem;
         border-radius: 10px;
+        border-width: 0px;
         text-align: left;
         white-space: normal;
-        max-width: 290px;
-        height: 200px;
+        height: 350px;
         box-sizing: border-box;
     }
 
     .tx-hero .md-button--users {
         background-color: var(--md-primary-bg-color);
-        color: hsla(280deg, 37%, 48%, 1);
-        border-color: var(--md-primary-bg-color)
+        border-color: var(--md-primary-bg-color);
     }
 
     .tx-hero .md-button--admins {
         background-color: var(--md-primary-bg-color);
-        color: hsla(280deg, 37%, 48%, 1);
-        border-color: var(--md-primary-bg-color)
+        border-color: var(--md-primary-bg-color);
     }
 
     .tx-hero .md-button--developers {
         background-color: var(--md-primary-bg-color);
-        color: hsla(280deg, 37%, 48%, 1);
-        border-color: var(--md-primary-bg-color)
+        border-color: var(--md-primary-bg-color);
     }
 
     .tx-hero .md-button:focus,
     .tx-hero .md-button:hover {
-        background-color: var(--md-accent-fg-color);
+        background-color: var(--md-primary-fg-color);
+        border-color: var(--md-primary-bg-color);
         color: var(--md-default-bg-color);
-        border-color: var(--md-accent-fg-color)
+    }
+
+    .tx-hero .md-button:focus .rounded-box,
+    .tx-hero .md-button:hover .rounded-box {
+        background-color: var(--md-primary-bg-color);
+        border-color: var(--md-primary-bg-color);
+        color: var(--md-primary-fg-color);
+    }
+
+    .tx-hero .md-button-sub-title {
+        font-weight: bold;
+        margin-bottom: 0;
+        font-size: 0.8rem; /* Adjust the font size for titles */
+        display: block;
     }
 
     .tx-hero .md-button-title {
         font-weight: bold;
-        margin-bottom: 0.5rem;
-        font-size: 1.0rem; /* Adjust the font size for titles */
+        margin-top: -0.3rem;
+        margin-bottom: 0;
+        font-size: 1.7rem; /* Adjust the font size for titles */
         display: block;
     }
 
     .tx-hero .md-button-description {
-        font-size: 0.6rem;
+        font-size: medium;
+        font-weight: 400;
         margin-bottom: 0.5rem;
         display: block;
     }
 
-    .buttons {
+    .tx-hero .rounded-box {
+        border-radius: 10px; /* Adjust the value to change the roundness */
+        background-color: var(--md-primary-fg-color); /* Background color of the box */
+        color: var(--md-primary-bg-color); /* Background color of the box */
+        width: 120px; /* Width of the box */
+        height: 40px;
+        margin-top: 4rem;
+        display: flex; /* Use flexbox */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+
+    .tx-hero .rounded-box p {
+        padding: 0; /* Padding around the text */
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+
+    .tx-hero .buttons {
         display: flex;
-        justify-content: space-around; /* Adjust as needed */
+        justify-content: space-between; /* Adjust as needed */
         align-items: flex-start; /* Align the tops of buttons */
+        margin-top: 1rem;
     }
 
     @media screen and (max-width:30em) {
@@ -108,11 +146,9 @@
 
     @media screen and (min-width:60em) {
         .tx-hero__content {
-            max-width: 40rem;
-            margin-top: 3.5rem;
-            margin-bottom: 3.5rem;
-            margin-left: 1.0rem;
-            margin-right: 4.0rem;
+            max-width: 45rem;
+            margin-top: 1rem;
+            margin-left: 0.75rem;
             align-items: center;
         }
     }
@@ -134,16 +170,28 @@
                 applications, and submitting jobs.</p>
             <div class="buttons">
                 <a href="users/user_guide" class="md-button md-button--users">
-                    <span class="md-button-title">Run the Front End</span>
+                    <span class="md-button-sub-title">Front End</span>
+                    <span class="md-button-title">Run</span>
                     <span class="md-button-description">Get started with using the Front End.</span>
+                    <div class="rounded-box">
+                        <p>Learn more</p>
+                    </div>
                 </a>
                 <a href="admins/admin_guide" class="md-button md-button--admins">
-                    <span class="md-button-title">Install the Front End</span>
+                    <span class="md-button-sub-title">Front End</span>
+                    <span class="md-button-title">Install</span>
                     <span class="md-button-description">Explore options for deploying the Front End.</span>
+                    <div class="rounded-box">
+                        <p>Learn more</p>
+                    </div>
                 </a>
                 <a href="developers/developer_guide" class="md-button md-button--developers">
-                    <span class="md-button-title">Front End Architecture</span>
+                    <span class="md-button-sub-title">Front End</span>
+                    <span class="md-button-title">Architecture</span>
                     <span class="md-button-description">Learn how the Front End works.</span>
+                    <div class="rounded-box">
+                        <p>Learn more</p>
+                    </div>
                 </a>
             </div>
         </div>

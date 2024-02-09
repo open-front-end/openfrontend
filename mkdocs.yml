@@ -4,7 +4,7 @@ theme:
   name: material
   custom_dir: theme/custom
   palette:
-    primary: blue
+    primary: custom
   font:
     text: Nunito
     code: Roboto Mono
@@ -25,9 +25,6 @@ theme:
 
 plugins:
   - search
-
-# repo_url: https://github.com/GoogleCloudPlatform/hpc-toolkit
-# repo_name: hpc-toolkit
 
 nav:
   - Home: index.md
