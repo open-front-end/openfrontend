@@ -41,6 +41,7 @@ nav:
     - Developer Guide: developers/developer_guide.md
 
 extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.3/lottie.min.js
   - javascripts/extra.js
 
 extra_css:
