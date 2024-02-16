@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: 'sRvmudTB3W.json', // Path to your JSON file
+        path: 'home_animation.json', // Path to your JSON file
     });
     animation.setSpeed(0.2);
 });
