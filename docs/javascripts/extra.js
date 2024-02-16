@@ -1,11 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Initialize Lottie animation
+if (window.location.pathname === '/') {
     var animation = lottie.loadAnimation({
-        container: document.getElementById('lottie-container'), // Container element
+        container: document.getElementById('lottie-container'),
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: 'home_animation.json', // Path to your JSON file
+        path: 'home_animation.json',
     });
     animation.setSpeed(0.2);
-});
+}
