@@ -13,7 +13,7 @@ asked to select the appropriate cloud credential. Normal users and admin users
 are able to create workbenches however viewer users will need to request a
 workbench is created by their administrator.
 
-![workbench step 1](/images/create1.png)
+![workbench step 1](../images/create1.png)
 
 On the above page you will be asked to select name, subnet, cloud zone, Trusted
 User, Machine Type, Boot disk type, Boot Disk Capacity and image family.
@@ -46,7 +46,7 @@ Once the initial configuration is saved an additional configuration section
 will be displayed showing the options to mount any shared file storage known
 about by the Open Front End.
 
-![workbench step 2](/images/create2.png)
+![workbench step 2](../images/create2.png)
 
 From this menu you will select the file storage you wish to mount, the order in
 which to mount and the mount point within the filesystem. It is important to
@@ -61,43 +61,43 @@ Within the workbench there are methods for accessing GCP cloud storage (via the
 Once the workbench is is configured you will be presented with the details
 page, which will contain a create link to start the workbench.
 
-![workbench step 3](/images/create3.png)
+![workbench step 3](../images/create3.png)
 
 Once the create button is pressed the Front End will initiate the creation of
 the new workbench. It will take a few minutes for the workbench to be
 available, during which time the status will show *Workbench is being created*:
 
-![workbench step 4](/images/create4.png)
+![workbench step 4](../images/create4.png)
 
 Once ready an `Open JupyterLab` link will be displayed.
 
-![workbench step 5](/images/create5.png)
+![workbench step 5](../images/create5.png)
 
 Click the `Open JupyterLab` button, the notebook will be shown in a separate
 page. This is exactly the same view as notebooks opened from GCP console.
 
-![Jupyter notebook](/images/JupyterLab.png)
+![Jupyter notebook](../images/JupyterLab.png)
 
 ## Destroy Workbench
 
 If the workbench is no longer required it can be deleted via the destroy link
 on the workbench page.
 
-![workbench step 5](/images/create5.png)
+![workbench step 5](../images/create5.png)
 
 It is important to remember that all data stored on the workbench instance will
 be deleted unless it has been saved in another place such as a shared
 filesystem or transferred elsewhere in another way. Once the destory button is
 clicked a confirmation page will be displayed.
 
-![Destroy confirmation](/images/destroy_confirm.png)
+![Destroy confirmation](../images/destroy_confirm.png)
 
 You will then be returned to the workbench detail page with the status updated
 to "terminating".
 
-![Destroying status](/images/destroying_status.png)
+![Destroying status](../images/destroying_status.png)
 
 Once the workbench is destroyed the workbench can either be deleted permanently
 or recreated if it is required again.
 
-![Delete or recreate](/images/delete.png)
+![Delete or recreate](../images/delete.png)

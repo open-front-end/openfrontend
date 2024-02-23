@@ -103,7 +103,7 @@ required roles are:
 ```
 
 If required, an even stricter, or least-privilege custom role can be created.
-Details are given in the [Advanced Admin Guide](/admins/advanced_admin_guide/#user-account).
+Details are given in the [Advanced Admin Guide](../admins/advanced_admin_guide/#user-account).
 
 The user account must also be [authenticated to deploy GCP resources](https://cloud.google.com/sdk/gcloud/reference/auth/application-default/login), which can be
 done with the following command:
@@ -146,7 +146,7 @@ prompts the Admin for required parameters.
    will create a service account, and generate a credential, associated with
    the GCP project specified earlier. This service account may not be needed if
    using an existing one, or using multiple projects (see the
-   [Advanced Admin Guide](/admins/advanced_admin_guide/#multi-project-configuration)
+   [Advanced Admin Guide](../admins/advanced_admin_guide/#multi-project-configuration)
    for details).
 8. If selected, a credential file, `credential.json`. will be created in the 
     directory that needs to be registered in the Open Front End (see below).
@@ -213,7 +213,7 @@ needs to be copied into the *Credentials* form in the Open Front End.
 
 The deploy script will usually create a service account and credential (unless
 told not to), but other service accounts can be used (see the
-[Advanced Admin Guide](/admins/advanced_admin_guide/#service-account-management)
+[Advanced Admin Guide](../admins/advanced_admin_guide/#service-account-management)
 for details).
 
 <!--
@@ -392,7 +392,7 @@ section under *APIs and services* category. Note that the *Authorised JavaScript
 origins* field should contain a callback URL in the following format:
 `https://<domain_name>/accounts/google/login/callback/`
 
-![Oauth set-up](/images/GCP-app-credential.png)
+![Oauth set-up](../images/GCP-app-credential.png)
 
 From the GCP console note the `client ID` and `client secret`, then return to
 the Admin site of the deployment and locate the *social applications* database
@@ -400,7 +400,7 @@ table. A *Google API* record should have been created during the deployment.
 Replace the two placeholders with the `client ID` and `client secret`. The site
 is ready to accept Google login.
 
-![Social login set-up](/images/register-social-app.png)
+![Social login set-up](../images/register-social-app.png)
 
 #### Set Allowed Users by Email Address
 
@@ -440,11 +440,11 @@ be available to set the total spend available to the user.
 
 ## Application Management
 
-Please see the [Application Guide](/admins/application_guide/).
+Please see the [Application Guide](../admins/application_guide/).
 
 ## Workbench Management
 
-Please see the [Workbench Admin Guide](/admins/workbench_admin_guide/).
+Please see the [Workbench Admin Guide](../admins/workbench_admin_guide/).
 
 ## Teardown Process
 
@@ -510,7 +510,7 @@ the Open Front End, which then needs updating.
 
 It's not possible to capture all such situations. Here, a list of tips is
 given to help debug cluster creation problems. The
-[Developer Guide](/developers/developer_guide/) contains a lot of details on how the
+[Developer Guide](../developers/developer_guide/) contains a lot of details on how the
 back-end logic is handled, which can also help with certain issues.
 
 - If a cluster is stuck at status *c*, something is wrong with the provisioning

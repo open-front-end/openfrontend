@@ -126,7 +126,7 @@ the website.
 For standard users, when running a job, there is an option to associated that
 job to an existing benchmark, as shown in the following figure:
 
-![Associate a job with a benchmark](/images/benchmark.png)
+![Associate a job with a benchmark](../images/benchmark.png)
 
 For benchmark jobs, the job script should contain logic to produce a key
 performance indicator (KPI) which will be sent back to the service machine and
@@ -148,4 +148,4 @@ Vertex AI Workbenches give the user a dedicated interactive environment to
 perform pre- or post-processing of data directly from the cluster, as
 Jupyter Notebooks.
 
-Please refer to the [Workbench User Guide](/users/workbench_user_guide).
+Please refer to the [Workbench User Guide](../users/workbench_user_guide).
