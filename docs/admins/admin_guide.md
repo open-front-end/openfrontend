@@ -510,7 +510,7 @@ the Open Front End, which then needs updating.
 
 It's not possible to capture all such situations. Here, a list of tips is
 given to help debug cluster creation problems. The
-[Developer Guide](../../developers/developer_guide/) contains a lot of details on how the
+[Developer Guide](../../../developers/developer_guide/) contains a lot of details on how the
 back-end logic is handled, which can also help with certain issues.
 
 - If a cluster is stuck at status *c*, something is wrong with the provisioning
