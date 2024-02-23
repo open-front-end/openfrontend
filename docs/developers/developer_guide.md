@@ -12,7 +12,7 @@ are provided for it to generate Terraform configurations.
 
 The overall system design is described in the following figure:
 
-![System Design](images/system-design.png) <!--TODO: refine this sketch-->
+![System Design](../images/system-design.png) <!--TODO: refine this sketch-->
 
 In most cases, end-users are expected to use and communicate with the cloud
 systems via the FrontEnd. Of course, users from a traditional supercomputing
@@ -67,14 +67,14 @@ for most cloud operations and selected files created by jobs.
 
 Communication between the service machine and clusters is handled by
 [Pub/Sub](https://cloud.google.com/pubsub). For technical details, consult the
-[Cluster Command & Control](ClusterCommandControl.md) document. Alternatively,
+[Cluster Command & Control](../../../admins/cluster_guide/) document. Alternatively,
 there is an API layer around Django to allow incoming communication to the
 service machine.
 
 ## Deploy the system
 
 Please follow the deployment section in the
-[Administrator’s Guide](admin_guide.md) to deploy the system for testing and
+[Administrator’s Guide](../../../admins/admin_guide/) to deploy the system for testing and
 development.
 
 Here are some notes from a developer's perspective:
@@ -230,7 +230,7 @@ python manage.py graph_models -a -X <classes_to_exclude> -o UML_output.png
 To simplify the output and exclude Django's internal models, append a list of
 comma-separated class names after the -X flag. The result is shown below:
 
-![UML](images/db-UML.png)
+![UML](../images/db-UML.png)
 
 Note that the *CloudResource* model is at the base of all cloud resources
 including network components, storage components, compute instance

@@ -17,7 +17,7 @@ including:
 - Cloud Zone
 - Trusted User
 
-![Workbench create process part 1](images/Workbench-Create-1.png)
+![Workbench create process part 1](../images/Workbench-Create-1.png)
 
 The subnet will define which regions the workbench can be located in.
 Workbenches are not available in all regions, see
@@ -42,7 +42,7 @@ Workbench instances have a limited number of configurations:
 - Boot disk capacity
 - Image type
 
-![Workbench create process part 2](images/Workbench-Create-2.png)
+![Workbench create process part 2](../images/Workbench-Create-2.png)
 
 ## Machine type & Workbench Presets
 
@@ -62,7 +62,7 @@ Presets can be edited, deleted or new presets added via the admin
 panel where you can set the machine type and the category under which
 the user will see the preset.
 
-![Workbench create process - Presets](images/Workbench-Create-Presets.png)
+![Workbench create process - Presets](../images/Workbench-Create-Presets.png)
 
 ## Workbench Storage
 
@@ -71,7 +71,7 @@ are required to be mounted on the workbench. On this page the
 configuration fields will be disabled and no changes will be possible
 to the workbench configuration.
 
-![Workbench create process - Storage](images/Workbench-Create-Storage.png)
+![Workbench create process - Storage](../images/Workbench-Create-Storage.png)
 
 Within this configuration you can select from existing storage
 exports, the order they are mounted, and the mouth path in the

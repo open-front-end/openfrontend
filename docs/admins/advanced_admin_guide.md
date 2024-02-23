@@ -39,7 +39,7 @@ required.
 
 Service accounts can be created in a number of ways, as outlined below. In each
 case, the generated credential (in json format) is registered within the TKFE
-portal in the same way (as outlined in the [Admin Guide](admin_guide.md).
+portal in the same way (as outlined in the [Admin Guide](../admin_guide/)).
 
 ### Creating a service account via the helper script
 

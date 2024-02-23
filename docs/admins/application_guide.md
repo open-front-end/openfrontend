@@ -110,7 +110,7 @@ A typical workflow for installing a new Spack application is as follows:
 1. A successfully installed application will have its status updated to
   ‘ready’. A *New Job* button becomes available from the Actions menu on the
    application list page, or from the application detail page. The
-   [User Guide](user_guide.md) contains additional information on how jobs can
+   [User Guide](../../../user_guide) contains additional information on how jobs can
    be prepared and submitted.
 
 ---
