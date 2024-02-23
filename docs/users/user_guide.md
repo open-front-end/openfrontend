@@ -148,4 +148,4 @@ Vertex AI Workbenches give the user a dedicated interactive environment to
 perform pre- or post-processing of data directly from the cluster, as
 Jupyter Notebooks.
 
-Please refer to the [Workbench User Guide](../users/workbench_user_guide).
+Please refer to the [Workbench User Guide](../workbench_user_guide).
