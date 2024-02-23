@@ -1,0 +1,250 @@
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+<style>
+    .md-main {
+        flex-grow: 0;
+        display: none;
+    }
+
+    .md-main__inner {
+        display: flex;
+        height: 100%;
+    }
+
+    .tx-container {
+        overflow: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        padding-top: .0rem;
+        background: linear-gradient(to bottom, var(--md-primary-fg-color), hsla(160deg,47%,55%,1) 100%,#fff 100%);
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .tx-hero {
+        margin: 3rem 2.8rem;
+        color: var(--md-primary-bg-color);
+        justify-content: center;
+    }
+
+    .tx-hero h1 {
+        margin-bottom: 1rem;
+        color: currentColor;
+        font-weight: 700
+    }
+
+    .tx-hero p {
+        margin-bottom: 1rem;
+        color: currentColor;
+        font-size:larger;
+    }
+
+    .tx-hero__content {
+        margin: 0 0 0 0;
+    }
+
+    .tx-hero .hero-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .tx-hero .hero-container-text {
+        flex: 0 0 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .tx-hero #lottie-container {
+        flex: 0 0 60%;
+        margin: 0 auto;
+    }
+
+    .tx-hero .buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 0.5rem;
+    }
+
+    .tx-hero .rounded-box {
+        border-radius: 10px;
+        background-color: var(--md-primary-fg-color);
+        color: var(--md-primary-bg-color);
+        width: 120px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+    }
+
+    .tx-hero .rounded-box p {
+        padding: 0;
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+
+    .tx-hero .md-button {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin-top: 0.5rem;
+        margin-right: .5rem;
+        color: var(--md-primary-fg-color);
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+        border-radius: 10px;
+        border-width: 0px;
+        text-align: left;
+        white-space: normal;
+        height: 300px;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+
+    .tx-hero .md-button--users {
+        background-color: var(--md-primary-bg-color);
+        border-color: var(--md-primary-bg-color);
+    }
+
+    .tx-hero .md-button--admins {
+        background-color: var(--md-primary-bg-color);
+        border-color: var(--md-primary-bg-color);
+    }
+
+    .tx-hero .md-button--developers {
+        background-color: var(--md-primary-bg-color);
+        border-color: var(--md-primary-bg-color);
+    }
+
+    .tx-hero .md-button:focus,
+    .tx-hero .md-button:hover {
+        background-color: var(--md-primary-fg-color);
+        border-color: var(--md-primary-bg-color);
+        color: var(--md-default-bg-color);
+    }
+
+    .tx-hero .md-button:focus .rounded-box,
+    .tx-hero .md-button:hover .rounded-box {
+        background-color: var(--md-primary-bg-color);
+        border-color: var(--md-primary-bg-color);
+        color: var(--md-primary-fg-color);
+    }
+
+    .tx-hero .md-button-sub-title {
+        font-weight: bold;
+        margin-bottom: 0;
+        font-size: 0.8rem;
+        display: block;
+    }
+
+    .tx-hero .md-button-title {
+        font-weight: bold;
+        margin-top: -0.3rem;
+        margin-bottom: 0;
+        font-size: 1.7rem;
+        display: block;
+    }
+
+    .tx-hero .md-button-description {
+        font-size: medium;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    @media screen and (max-width:30em) {
+        .tx-hero h1 {
+            font-size: 1.4rem
+        }
+    }
+
+    @media screen and (min-width:60em) {
+        .tx-hero__content {
+            max-width: 45rem;
+            margin-top: 1rem;
+            margin-left: 0.75rem;
+            align-items: center;
+        }
+    }
+</style>
+
+<main class="tx-container">
+    <div class="md-grid md-typeset">
+      <div class="tx-hero">
+        <div class="tx-hero__content">
+            <h1>Google Open Front End</h1>
+            <div class="hero-container">
+                <div class="hero-container-text">
+                    <p>The Google Cloud HPC Toolkit is an open-source project designed to simplify the deployment of High Performance Computing clusters on Google Cloud.</p>
+                    <p>With the Open Front End, users can enjoy a straightforward interface that harnesses the HPC Toolkit's capabilities to effortlessly create custom HPC clusters, install necessary applications, and submit tasks with ease.</p>
+                </div>
+                <div id="lottie-container"></div>
+            </div>
+            <div class="buttons">
+                <a href="users/user_guide" class="md-button md-button--users">
+                    <div>
+                        <span class="md-button-sub-title"></span>
+                        <span class="md-button-title">Run</span>
+                        <span class="md-button-description">Begin exploring and using the capabilities of the Open Front End.</span>
+                    </div>
+                    <div class="rounded-box">
+                        <p>Learn more</p>
+                    </div>
+                </a>
+                <a href="admins/admin_guide" class="md-button md-button--admins">
+                    <div>
+                        <span class="md-button-sub-title"></span>
+                        <span class="md-button-title">Install</span>
+                        <span class="md-button-description">Explore deployment options for the Open Front End.</span>
+                    </div>
+                    <div class="rounded-box">
+                        <p>Learn more</p>
+                    </div>
+                </a>
+                <a href="developers/developer_guide" class="md-button md-button--developers">
+                    <div>
+                        <span class="md-button-sub-title"></span>
+                        <span class="md-button-title">Architecture</span>
+                        <span class="md-button-description">Discover how the Open Front End works.</span>
+                    </div>
+                    <div class="rounded-box">
+                        <p>Learn more</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+</main>
+<script>
+var animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-container'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'home_animation.json',
+});
+animation.setSpeed(0.2);
+</script>
+
+{% endblock %}
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}
