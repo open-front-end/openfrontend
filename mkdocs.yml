@@ -46,3 +46,6 @@ extra_javascript:
 
 extra_css:
   - stylesheets/extra.css
+
+markdown_extensions:
+  - sane_lists
